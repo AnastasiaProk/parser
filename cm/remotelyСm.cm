@@ -1,6 +1,6 @@
 ## ## ***********************************************************************************
 
-#define PATH /Users/Anastasia/exampleParser
+#define PATH /Users/Anastasia/exParser
 #define SSH_con ssh hpcuser29@clu.nusc.ru -i /Users/Anastasia/key_nusc_school_2017.dat
 #define SCP_con scp -i /Users/Anastasia/key_nusc_school_2017.dat /Users/Anastasia/main1.cpp hpcuser29@clu.nusc.ru:~/
 
@@ -19,9 +19,9 @@
 ## FINISH ***********************************************************************************
 
 ## START ***********************************************************************************
-    /Users/Anastasia/exampleParser/main.cpp ; /Users/Anastasia/exampleParser/main ; gcc $PATH/main.cpp -o $PATH/main
+    $PATH/main.cpp ; $PATH/main ; gcc $PATH/main.cpp -o $PATH/main
 
-    /Users/Anastasia/exampleParser/main ; example1.txt ; $PATH/main > example1.txt && \
+    $PATH/main ; example1.txt ; $PATH/main > example1.txt && \
                                           rm $PATH/main
 ## FINISH ***********************************************************************************
 
